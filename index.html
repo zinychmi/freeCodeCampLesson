@@ -1,28 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="shortcut icon" href="#" type="image/x-icon">
-    <script src="https://unpkg.com/htmx.org@1.9.10" integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/htmx.org@1.9.10"
+        integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+        crossorigin="anonymous"></script>
 </head>
+
 <body>
     <header class="header">
         <nav data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="global.header-nav.partial.html"></nav>
     </header>
     <main class="main">
-        <h1>CatPhotoApp</h1> <!--1-->
-        <h2>Cat Photos</h2> <!--2-->
-        <!-- TODO: Add link to cat photos --> <!--4-->
-        <p>Everyone loves cute cats online!</p><!--3-->
-        <p>See more <a href="https://freecatphotoapp.com">cat photos</a> in our gallery</p> <!--10,11,12,13-->
-        <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
-         alt="A cute orange cat lying on its back"> <!--7,8,9-->
-    </main> <!--5(but i have it from the start)-->
-    <!--6(i using 4 spaces tabulation,its just more comfortable for me,and usually its default in VSCode)-->
+        <h1>CatPhotoApp</h1> 
+        <section>
+            <h2>Cat Photos</h2>
+            <p>Everyone loves <a href="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg">cute
+                    cats</a> online!</p>
+            <p>See more <a href="https://freecatphotoapp.com" target="_blank">cat photos</a> in our gallery</p>
+            
+            <a href="https://freecatphotoapp.com"><img
+                    src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
+                    alt="A cute orange cat lying on its back"></a> 
+        </section>
+        <section>
+            <h2>Cat Lists</h2>
+            <h3>Things cats love:</h3>
+            <ul>
+                <li>catnip</li>
+                <li>laser pointers</li>
+                <li>lasagna</li>
+            </ul>
+            <figure>
+                <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg"
+                    alt="A slice of lasagna on a plate.">
+                <figcaption>Cats <em>love</em> lasagna.</figcaption>
+            </figure>
+            <h3>Top 3 things cats hate:</h3>
+            <ol>
+                <li>flea treatment</li>
+                <li>thunder </li>
+                <li>other cats</li>
+            </ol>
+            <figure>
+                <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Two tabby kittens sleeping together on a couch.">
+                <figcaption>Cats <strong>hate</strong> other cats.</figcaption>
+            </figure>
+        </section>
+    </main> 
     <footer class="footer">
-        
+
     </footer>
 </body>
+
 </html>
